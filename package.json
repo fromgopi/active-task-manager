@@ -5,7 +5,7 @@
     "main": "index.js",
     "maintainers": [],
     "scripts": {
-        "start": "ts-node index.js",
+        "start": "ts-node index.ts",
         "dev": "./node_modules/nodemon/bin/nodemon.js",
         "test": ""
     },

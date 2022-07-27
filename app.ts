@@ -37,3 +37,5 @@ class App {
         this.express.use(bodyParser.urlencoded({ extended: false }))
     }
 }
+
+export default new App().express
