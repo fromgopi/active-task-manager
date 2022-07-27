@@ -15,4 +15,3 @@ export class APILogger {
         logger.error(message);
     }
 }
-
