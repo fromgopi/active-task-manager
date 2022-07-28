@@ -21,7 +21,6 @@ class App {
         this.logger = new APILogger();
         this.middleware();
         this.routes();
-        this.db = connect();
         
     }
     
@@ -41,6 +40,7 @@ class App {
     private middleware(): void {
         this.express.use(bodyParser.json());
         this.express.use(bodyParser.urlencoded({ extended: false }))
+        this.db = connect();
     }
 }
 
