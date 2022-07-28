@@ -7,7 +7,7 @@ const logger = pine()
  */
 export class APILogger {
     
-    info(message: any, data: any) {
+    info(message: any, data=new Date()) {
         logger.info(`${message}   ${undefined != data ? JSON.stringify(data) : ''}`);
     }
 
@@ -15,3 +15,4 @@ export class APILogger {
         logger.error(message);
     }
 }
+

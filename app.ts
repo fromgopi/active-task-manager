@@ -3,6 +3,8 @@ import * as express from 'express';
 import * as swaggerUi from 'swagger-ui-express';
 import * as fs from 'fs';
 import { APILogger } from './config/logger/api.logger';
+import { connect } from './config/db/db.config';
+import 'dotenv/config';
 
 /**
  * Entry point for the application
@@ -11,12 +13,16 @@ import { APILogger } from './config/logger/api.logger';
 class App {
     public express: express.Application;
     public logger: APILogger;
+    private db: any
 
     constructor() {
         this.express = express();
+        // this.loadConfig();
+        this.logger = new APILogger();
         this.middleware();
         this.routes();
-        this.logger = new APILogger()
+        this.db = connect();
+        
     }
     
     /**
