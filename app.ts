@@ -21,7 +21,7 @@ class App {
         this.logger = new APILogger();
         this.middleware();
         this.routes();
-        
+    
     }
     
     /**
