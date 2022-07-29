@@ -11,7 +11,7 @@ import 'dotenv/config';
  * @param  
  */ 
 class App {
-    public express: express.Application;
+    public express: express.Application; 
     public logger: APILogger;
     private db: any
 
