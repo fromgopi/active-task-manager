@@ -3,7 +3,7 @@ const pine = require('pine');
 const logger = pine()
 
 /**
- * API Logger class
+ * API Logger class 
  */
 export class APILogger {
     
