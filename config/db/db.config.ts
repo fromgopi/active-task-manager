@@ -2,9 +2,9 @@ import { Sequelize } from "sequelize-typescript";
 import { APILogger } from "../logger/api.logger"
 const logger = new APILogger();
 
-/**
- * Connect is a function which will connect to the db
- * @returns DB Config Object
+/** 
+ * Connect is a function which will connect to the db  
+ * @returns DB Config Object 
  */
 export const connect = () => {
     const host = process.env.HOST
