@@ -12,7 +12,7 @@ import 'dotenv/config';
  */   
 class App { 
     public express: express.Application; 
-    public logger: APILogger;
+    public logger: APILogger; 
     private db: any
 
     constructor() {
