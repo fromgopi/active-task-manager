@@ -4,7 +4,7 @@ import * as swaggerUi from 'swagger-ui-express';
 import * as fs from 'fs';
 import { APILogger } from './config/logger/api.logger';
 import { connect } from './config/db/db.config';  
-import 'dotenv/config';
+import 'dotenv/config'; 
   
 /**  
  * Entry point for the application   
