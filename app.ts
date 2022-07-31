@@ -7,7 +7,7 @@ import { connect } from './config/db/db.config';
 import 'dotenv/config';
   
 /**  
- * Entry point for the application  
+ * Entry point for the application   
  * @param  
  */    
 class App { 
