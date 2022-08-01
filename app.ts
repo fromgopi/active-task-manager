@@ -9,10 +9,10 @@ import 'dotenv/config';
 /** 
  * Entry point for the application
  * @param  
- */  
+ */   
 class App { 
     public express: express.Application; 
-    public logger: APILogger;
+    public logger: APILogger; 
     private db: any
 
     constructor() {
