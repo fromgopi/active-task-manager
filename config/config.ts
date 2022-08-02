@@ -5,3 +5,4 @@ export interface Config {
     databases: string;
     info: any
 }
+
