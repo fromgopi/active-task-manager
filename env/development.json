@@ -1,0 +1,24 @@
+{
+    "basePath": "/api/v1",
+    "info": {
+        "name": "Active task manager",
+        "version": "0.0.1",
+        "env": "dev"
+    },
+    "database": {
+        "default": {
+            "user": "admin",
+            "password": "admin",
+            "options": {
+                "host": "localhost",
+                "database": "taskman",
+                "requestTimeout": 300000,
+                "dialect": "postgres",
+                "logging": true,
+                "dialectOptions": {
+                "encrypt": false
+                }
+            }
+        }
+    }
+}
