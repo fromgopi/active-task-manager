@@ -34,5 +34,4 @@ export class ConfigManager {
             type: "json",
         });
     }
-
 }
