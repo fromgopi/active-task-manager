@@ -4,7 +4,7 @@ const logger = new APILogger();
 
 /**  
  * Connect is a function which will connect to the db   
- * @returns DB Config Object 
+ * @returns DB Config Object  
  */
 export const connect = () => {
     const host = process.env.HOST
