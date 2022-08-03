@@ -7,7 +7,7 @@ const CopyWebpackPlugin = require("copy-webpack-plugin");
 module.exports = (env, argv) => {
     return {
         entry: {app: './index.ts'},
-        
+
         externalsPresets: { node: true },
         context: __dirname,
 
