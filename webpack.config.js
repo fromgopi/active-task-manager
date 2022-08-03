@@ -14,7 +14,7 @@ module.exports = (env, argv) => {
         externals: [nodeExternals()],
         output: {
             path: path.join(__dirname, "dist"),
-            filename: "atm-v-01.js"
+            filename: "active-task-v-01.js"
         },
         plugins: [
             new CleanWebpackPlugin(),
