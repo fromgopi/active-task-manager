@@ -2,9 +2,10 @@ import * as bodyParser from 'body-parser';
 import * as express from 'express';
 import * as swaggerUi from 'swagger-ui-express';
 import * as fs from 'fs';
-import { APILogger } from './config/logger/api.logger';
-import { connect } from './config/db/db.config'; 
+import { APILogger } from '../config/logger/api.logger';
+import { connect } from '../config/db/db.config'; 
 import 'dotenv/config';
+import { Config, ConfigManager } from '../config';
 
 /** 
  * Entry point for the application
@@ -14,13 +15,16 @@ class App {
     public express: express.Application; 
     public logger: APILogger; 
     private db: any
+    private config: Config
 
     constructor() {
         this.express = express();
         // this.loadConfig();
+        this.config = new ConfigManager().config;
         this.logger = new APILogger();
         this.middleware();
         this.routes();
+        
     }
     
     /**

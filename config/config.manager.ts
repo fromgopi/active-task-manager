@@ -2,20 +2,24 @@ import { Config } from './config';
 import * as nconf from 'nconf'
 
 export class ConfigManager {
-    private config: Config;
+    private conf: Config;
 
     constructor() {
         this.init();
     }
     
+    public get config(): Config {
+        return this.conf;
+    }
     private init() {
         nconf.use("memory");
 
         if (!nconf.get("info")) {
             this.getFile();
         }
-        this.config = nconf.get();
-        nconf.required(["port"]);
+        this.conf = nconf.get();
+        // const port = "8000";
+        // nconf.required([port]);
     }
 
     private getFile(): void {
