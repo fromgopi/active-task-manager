@@ -1,5 +1,5 @@
 import * as http from 'http';
-import App from './app';
+import App from './src/app';
 import { APILogger } from './config/logger/api.logger';
 
 const port = 8000
