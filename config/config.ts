@@ -6,5 +6,3 @@ export interface Config {
     info: any
 }
 
-
-
