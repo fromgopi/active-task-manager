@@ -48,4 +48,3 @@ class App {
 }
 
 export default new App().express
-
