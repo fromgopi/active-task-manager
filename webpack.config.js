@@ -16,7 +16,7 @@ module.exports = (env, argv) => {
         output: {
             path: path.join(__dirname, "dist"),
             filename: "active-task-v-01.js"
-        },
+        }, 
         plugins: [
             new CleanWebpackPlugin(),
             new CopyWebpackPlugin({
