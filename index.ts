@@ -3,7 +3,7 @@ import App from './src/app';
 import { APILogger } from './config/logger/api.logger';
 
 const port = 8000
-App.set("port", port);
+App.set("port", port); 
 const server = http.createServer(App);
 const logger = new APILogger();
 server.listen(port);
