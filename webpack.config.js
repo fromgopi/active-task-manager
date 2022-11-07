@@ -11,7 +11,6 @@ module.exports = (env, argv) => {
 
         externalsPresets: { node: true },
         context: __dirname,
-
         externals: [nodeExternals()],
         output: {
             path: path.join(__dirname, "dist"),
