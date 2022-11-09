@@ -10,7 +10,7 @@ module.exports = (env, argv) => {
         entry: {app: './index.ts'}, 
 
         externalsPresets: { node: true },
-        context: __dirname,
+        context: __dirname, 
         externals: [nodeExternals()],
         output: {
             path: path.join(__dirname, "dist"),
