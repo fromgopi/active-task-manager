@@ -8,7 +8,7 @@ import 'dotenv/config';
 import { Config, ConfigManager } from '../config';  
    
 /**   
- * Entry point for the application
+ * Entry point for the application 
  * @param   
  */      
 class App {  
