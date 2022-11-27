@@ -1,17 +1,18 @@
 import * as bodyParser from 'body-parser';
 import * as express from 'express';
 import * as swaggerUi from 'swagger-ui-express';
-import * as fs from 'fs';
+import * as fs from 'fs'; 
 import { APILogger } from '../config/logger/api.logger';
 import { connect } from '../config/db/db.config'; 
 import 'dotenv/config';
-import { Config, ConfigManager } from '../config';  
+import { Config, ConfigManager } from '../config';   
+  
 
-/**  
- * Entry point for the application
- * @param  
- */   
-class App { 
+/**      
+ * Entry point for the application 
+ * @param    
+ */      
+class App {   
     public express: express.Application; 
     public logger: APILogger; 
     private db: any

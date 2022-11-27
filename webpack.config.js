@@ -1,22 +1,21 @@
-const nodeExternals = require('webpack-node-externals');
+const nodeExternals = require('webpack-node-externals'); 
 const path = require("path");
 const webpack = require('webpack');
-const { CleanWebpackPlugin } = require("clean-webpack-plugin")
-const CopyWebpackPlugin = require("copy-webpack-plugin"); 
-    
-module.exports = (env, argv) => {   
-    return {
-         
-        entry: {app: './index.ts'},
+const { CleanWebpackPlugin } = require("clean-webpack-plugin") 
+const CopyWebpackPlugin = require("copy-webpack-plugin");   
+               
+module.exports = (env, argv) => {      
+    return {    
+             
+        entry: {app: './index.ts'}, 
 
         externalsPresets: { node: true },
-        context: __dirname,
-
+        context: __dirname, 
         externals: [nodeExternals()],
         output: {
             path: path.join(__dirname, "dist"),
             filename: "active-task-v-01.js"
-        },
+        }, 
         plugins: [
             new CleanWebpackPlugin(),
             new CopyWebpackPlugin({
