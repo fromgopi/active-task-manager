@@ -7,7 +7,7 @@ import { connect } from '../config/db/db.config';
 import 'dotenv/config';
 import { Config, ConfigManager } from '../config';   
   
- 
+  
 /**      
  * Entry point for the application 
  * @param     
