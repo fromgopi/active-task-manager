@@ -10,7 +10,7 @@ import { Config, ConfigManager } from '../config';
 
 /**      
  * Entry point for the application 
- * @param    
+ * @param     
  */      
 class App {   
     public express: express.Application; 
