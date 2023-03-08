@@ -12,7 +12,7 @@ server.on("listening", function() {
     const addr = server.address();
     const bind = (typeof addr === "string") ? `pipe ${addr}` : `port ${addr.port}`;
     logger.info(`Listening on ${bind}`, null);
-})
+}) 
 
 module.exports = App;
 
