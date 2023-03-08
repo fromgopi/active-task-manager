@@ -6,7 +6,7 @@ const port = 8000
 App.set("port", port); 
 const server = http.createServer(App);
 const logger = new APILogger();
-server.listen(port);
+server.listen(port); 
 
 server.on("listening", function() {
     const addr = server.address();
