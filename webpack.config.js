@@ -12,7 +12,7 @@ module.exports = (env, argv) => {
         externalsPresets: { node: true },
         context: __dirname, 
         externals: [nodeExternals()],
-        output: {
+        output: { 
             path: path.join(__dirname, "dist"),
             filename: "active-task-v-01.js"
         }, 
