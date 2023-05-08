@@ -8,7 +8,7 @@ module.exports = (env, argv) => {
     return {    
               
         entry: {app: './index.ts'}, 
-
+ 
         externalsPresets: { node: true },
         context: __dirname, 
         externals: [nodeExternals()],
